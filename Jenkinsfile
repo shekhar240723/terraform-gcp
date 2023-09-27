@@ -41,7 +41,7 @@ stage('SonarQube Analysis') {
                 script {
                     def scannerHome = tool name: 'sonarqube', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
                     def scanner = "${scannerHome}/bin/sonar-scanner"
-                    def sonarCmd = "${scanner} -Dsonar.projectKey=shekhar -Dsonar.host.url=http://13.232.246.186:9000 -Dsonar.login=sqp_60233075743bb622b9eb12b21e12364b8874101a"
+                    def sonarCmd = "${scanner} -Dsonar.projectKey=shekhar2 -Dsonar.host.url=http://13.232.246.186:9000 -Dsonar.login=sqa_d65a97c09af2fec2a83e41b86de8070530ddd324"
                     sh sonarCmd
                 }
             }
